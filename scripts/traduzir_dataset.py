@@ -1,6 +1,5 @@
 import pandas as pd
 
-# ── Dicionário de tradução das doenças ────────────────────────────────────────
 traducao_doencas = {
     "Fungal infection": "Infecção fúngica",
     "Allergy": "Alergia",
@@ -45,7 +44,6 @@ traducao_doencas = {
     "Impetigo": "Impetigo",
 }
 
-# ── Dicionário de tradução dos sintomas ───────────────────────────────────────
 traducao_sintomas = {
     "itching": "coceira",
     "skin_rash": "erupção_cutânea",
@@ -181,7 +179,6 @@ traducao_sintomas = {
     "yellow_crust_ooze": "crostas_amarelas",
 }
 
-# ── Aplicar traduções no dataset principal ────────────────────────────────────
 df = pd.read_csv("datasets/dataset.csv")
 df["Disease"] = df["Disease"].str.strip().map(traducao_doencas)
 
@@ -191,13 +188,11 @@ for col in colunas_sintoma:
 
 df.to_csv("datasets/dataset_pt.csv", index=False)
 
-# ── Aplicar traduções no dataset de probabilidades ────────────────────────────
 prob = pd.read_csv("datasets/probabilidades.csv")
 prob["Disease"] = prob["Disease"].str.strip().map(traducao_doencas)
 prob["Sintoma"] = prob["Sintoma"].str.strip().map(traducao_sintomas)
 prob.to_csv("datasets/probabilidades_pt.csv", index=False)
 
-# ── Checagem ──────────────────────────────────────────────────────────────────
 print("Doenças traduzidas:")
 for d in sorted(df["Disease"].dropna().unique()):
     print(f"  - {d}")
