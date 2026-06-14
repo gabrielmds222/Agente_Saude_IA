@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import math
 
-# ── Carregar dados ────────────────────────────────────────────────────────────
 with open("datasets/modelo_rede.pkl", "rb") as f:
     dados = pickle.load(f)
 
@@ -13,13 +12,11 @@ prob = pd.read_csv("datasets/probabilidades_pt.csv")
 doencas = prob["Disease"].unique()
 sintomas_por_doenca = prob.groupby("Disease")["Sintoma"].apply(list).to_dict()
 
-# ── Construir grafo manual ────────────────────────────────────────────────────
 G = nx.DiGraph()
 for doenca, sintomas in sintomas_por_doenca.items():
     for s in sintomas:
         G.add_edge(doenca, s)
 
-# ── Layout: doenças em círculo, sintomas ao redor de cada doença ──────────────
 pos = {}
 n_doencas = len(doencas)
 raio_doenca = 5.0
@@ -39,7 +36,6 @@ for i, doenca in enumerate(doencas):
             sy = dy + 2.2 * math.sin(angle_s)
             pos[s] = (sx, sy)
 
-# ── Cores por grupo de doença ─────────────────────────────────────────────────
 grupos = {
     "Hepatite A": "#e76f51", "Hepatite B": "#e76f51", "Hepatite C": "#e76f51",
     "Hepatite D": "#e76f51", "Hepatite E": "#e76f51", "Hepatite alcoólica": "#e76f51",
@@ -54,14 +50,12 @@ grupos = {
 }
 cor_padrao = "#028090"
 
-# ── Plot ──────────────────────────────────────────────────────────────────────
 fig, ax = plt.subplots(figsize=(30, 30))
 fig.patch.set_facecolor("#0D1B2A")
 ax.set_facecolor("#0D1B2A")
 
 todos_sintomas = set(prob["Sintoma"].unique())
 
-# Arestas
 nx.draw_networkx_edges(
     G, pos, ax=ax,
     edge_color="#1E3A4A",
@@ -71,7 +65,6 @@ nx.draw_networkx_edges(
     alpha=0.4
 )
 
-# Nós sintomas
 sintomas_nos = [n for n in G.nodes() if n in todos_sintomas]
 nx.draw_networkx_nodes(
     G, pos, nodelist=sintomas_nos, ax=ax,
@@ -80,7 +73,6 @@ nx.draw_networkx_nodes(
     alpha=0.9
 )
 
-# Nós doenças
 doencas_nos = [n for n in G.nodes() if n not in todos_sintomas]
 cores_doencas = [grupos.get(d, cor_padrao) for d in doencas_nos]
 nx.draw_networkx_nodes(
@@ -90,7 +82,6 @@ nx.draw_networkx_nodes(
     alpha=1.0
 )
 
-# Labels doenças
 nx.draw_networkx_labels(
     G, pos,
     labels={d: d for d in doencas_nos},
@@ -99,7 +90,6 @@ nx.draw_networkx_labels(
     font_weight="bold"
 )
 
-# Labels sintomas
 nx.draw_networkx_labels(
     G, pos,
     labels={s: s.replace("_", " ") for s in sintomas_nos},
@@ -107,7 +97,6 @@ nx.draw_networkx_labels(
     font_color="#8EAAB5"
 )
 
-# Legenda
 legenda = [
     mpatches.Patch(color="#e76f51", label="Hepatites"),
     mpatches.Patch(color="#f4a261", label="Infecções / Respiratórias"),

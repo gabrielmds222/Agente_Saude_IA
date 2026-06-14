@@ -9,13 +9,10 @@ with open("datasets/modelo_rede.pkl", "rb") as f:
 model    = dados["model"]
 sintomas = list(dados["sintomas"])
 infer    = VariableElimination(model)
-
 descricao  = pd.read_csv("datasets/symptom_Description_pt.csv")
 precaucao  = pd.read_csv("datasets/symptom_precaution_pt.csv")
 
-
 def inferir_probabilidades(sintomas_presentes: list, sintomas_ausentes: list) -> dict:
-    """Retorna P(doença) dado sintomas presentes e ausentes."""
     evidencia = {}
     for s in sintomas_presentes:
         evidencia[s] = 1
@@ -32,23 +29,16 @@ def inferir_probabilidades(sintomas_presentes: list, sintomas_ausentes: list) ->
     probs   = resultado.values
     return dict(zip(doencas, probs))
 
-
 def calcular_entropia(probs: dict) -> float:
-    """Entropia de Shannon da distribuição de doenças."""
     valores = np.array(list(probs.values()))
     valores = valores[valores > 0]
     return -np.sum(valores * np.log2(valores))
 
-
 def escolher_proximo_sintoma(probs_atual: dict, sintomas_presentes: list,
                               sintomas_ausentes: list, candidatos: list) -> str:
-    """
-    Escolhe o sintoma que mais reduz a entropia (máximo ganho de informação).
-    Testa cada sintoma candidato simulando resposta sim e não.
-    """
+
     melhor_sintoma  = None
     menor_entropia  = float("inf")
-
 
     doencas_vivas = [d for d, p in probs_atual.items() if p > 0.01]
 
@@ -57,10 +47,8 @@ def escolher_proximo_sintoma(probs_atual: dict, sintomas_presentes: list,
         p_sim  = inferir_probabilidades(sintomas_presentes + [sintoma], sintomas_ausentes)
         e_sim  = calcular_entropia(p_sim)
 
-    
         p_nao  = inferir_probabilidades(sintomas_presentes, sintomas_ausentes + [sintoma])
         e_nao  = calcular_entropia(p_nao)
-
     
         prob_sim = sum(p_sim[d] for d in doencas_vivas) / len(doencas_vivas)
         entropia_esperada = prob_sim * e_sim + (1 - prob_sim) * e_nao
@@ -71,21 +59,15 @@ def escolher_proximo_sintoma(probs_atual: dict, sintomas_presentes: list,
 
     return melhor_sintoma
 
-
 def formatar_sintoma(sintoma: str) -> str:
-    """Converte nome interno para exibição amigável."""
     return sintoma.replace("_", " ").capitalize()
 
-
 def listar_sintomas_iniciais(top_n: int = 30) -> list:
-    """Retorna os sintomas mais frequentes no dataset para a lista inicial."""
     df = pd.read_csv("datasets/dataset_pt.csv")
     colunas = [c for c in df.columns if c.startswith("Symptom")]
     todos   = df[colunas].values.ravel()
     contagem = pd.Series(todos).dropna().value_counts()
     return contagem.head(top_n).index.tolist()
-
-
 
 def rodar_agente():
     print("\n" + "="*60)
@@ -96,7 +78,6 @@ def rodar_agente():
 
     sintomas_presentes = []
     sintomas_ausentes  = []
-
 
     lista_inicial = listar_sintomas_iniciais(30)
     print("Com qual sintoma principal você está?")
@@ -114,7 +95,6 @@ def rodar_agente():
             break
         print("Opção inválida. Digite um número da lista.")
 
-
     MAX_PERGUNTAS  = 10
     LIMIAR_CONF    = 0.95 
     perguntas_feitas = 0
@@ -123,12 +103,10 @@ def rodar_agente():
     
         probs = inferir_probabilidades(sintomas_presentes, sintomas_ausentes)
 
-    
         doenca_top, prob_top = max(probs.items(), key=lambda x: x[1])
         if prob_top >= LIMIAR_CONF:
             break
 
-    
         candidatos = [s for s in sintomas
                       if s not in sintomas_presentes
                       and s not in sintomas_ausentes]
@@ -140,7 +118,6 @@ def rodar_agente():
                                            sintomas_ausentes, candidatos)
         if not proximo:
             break
-
     
         resposta = input(f"Você tem {formatar_sintoma(proximo)}? (s/n): ").strip().lower()
         if resposta == "sair":
@@ -154,7 +131,6 @@ def rodar_agente():
             sintomas_ausentes.append(proximo)
 
         perguntas_feitas += 1
-
 
     probs  = inferir_probabilidades(sintomas_presentes, sintomas_ausentes)
     top5   = sorted(probs.items(), key=lambda x: x[1], reverse=True)[:5]
@@ -172,12 +148,10 @@ def rodar_agente():
         barra = "█" * int(prob * 30)
         print(f"  {i}. {doenca:<40} {prob*100:5.1f}% {barra}")
 
-
     linha_desc = descricao[descricao["Disease"] == doenca_principal]
     if not linha_desc.empty:
         print(f"\n📋 Sobre {doenca_principal}:")
         print(f"   {linha_desc.iloc[0]['Description']}\n")
-
 
     linha_prec = precaucao[precaucao["Disease"] == doenca_principal]
     if not linha_prec.empty:
@@ -192,6 +166,11 @@ def rodar_agente():
     print("    Consulte um médico para diagnóstico definitivo.")
     print("="*60 + "\n")
 
-
 if __name__ == "__main__":
-    rodar_agente()
+    while True:
+        rodar_agente()
+        print("\nDeseja realizar uma nova triagem? (s/n): ", end="")
+        resposta = input().strip().lower()
+        if resposta != 's':
+            print("\nAté logo! Consulte sempre um médico. 👋\n")
+            break
