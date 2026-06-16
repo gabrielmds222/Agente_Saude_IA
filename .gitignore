@@ -27,13 +27,7 @@ ENV/
 .vscode/
 *.code-workspace
 
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb
-
 # Dados sensíveis e pesados
-datasets/
-*.csv
 *.xlsx
 *.json
 *.pkl

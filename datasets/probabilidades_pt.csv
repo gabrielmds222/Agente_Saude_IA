@@ -1,0 +1,322 @@
+Disease,Sintoma,contagem,P_sintoma_dado_doenca
+Infecção fúngica,coceira,108,0.9
+Infecção fúngica,erupção_cutânea,108,0.9
+Infecção fúngica,erupções_nodulares,108,0.9
+Infecção fúngica,manchas_discrômicas,108,0.9
+Alergia,espirros_contínuos,108,0.9
+Alergia,tremores,108,0.9
+Alergia,calafrios,108,0.9
+Alergia,lacrimejamento,108,0.9
+Refluxo gastroesofágico,dor_no_estômago,114,0.95
+Refluxo gastroesofágico,dor_no_peito,114,0.95
+Refluxo gastroesofágico,tosse,114,0.95
+Refluxo gastroesofágico,acidez,108,0.9
+Refluxo gastroesofágico,vômito,108,0.9
+Refluxo gastroesofágico,úlceras_na_língua,108,0.9
+Colestase crônica,coceira,114,0.95
+Colestase crônica,vômito,114,0.95
+Colestase crônica,pele_amarelada,114,0.95
+Colestase crônica,náusea,114,0.95
+Colestase crônica,perda_de_apetite,114,0.95
+Colestase crônica,dor_abdominal,114,0.95
+Colestase crônica,amarelamento_dos_olhos,114,0.95
+Reação a medicamento,coceira,114,0.95
+Reação a medicamento,erupção_cutânea,108,0.9
+Reação a medicamento,dor_no_estômago,108,0.9
+Reação a medicamento,ardência_ao_urinar,108,0.9
+Reação a medicamento,manchas_na_urina,108,0.9
+Úlcera péptica,vômito,114,0.95
+Úlcera péptica,dor_abdominal,114,0.95
+Úlcera péptica,coceira_interna,114,0.95
+Úlcera péptica,eliminação_de_gases,114,0.95
+Úlcera péptica,perda_de_apetite,108,0.9
+Úlcera péptica,indigestão,108,0.9
+AIDS,febre_alta,114,0.95
+AIDS,perda_muscular,108,0.9
+AIDS,manchas_na_garganta,108,0.9
+AIDS,contatos_extraconjugais,108,0.9
+Diabetes,poliúria,120,1.0
+Diabetes,apetite_aumentado,120,1.0
+Diabetes,perda_de_peso,114,0.95
+Diabetes,fadiga,114,0.95
+Diabetes,agitação,114,0.95
+Diabetes,letargia,114,0.95
+Diabetes,visão_turva,114,0.95
+Diabetes,nível_irregular_de_açúcar,114,0.95
+Diabetes,fome_excessiva,114,0.95
+Diabetes,obesidade,114,0.95
+Gastroenterite,diarreia,114,0.95
+Gastroenterite,vômito,108,0.9
+Gastroenterite,olhos_fundos,108,0.9
+Gastroenterite,desidratação,108,0.9
+Asma brônquica,falta_de_ar,114,0.95
+Asma brônquica,febre_alta,114,0.95
+Asma brônquica,histórico_familiar,114,0.95
+Asma brônquica,escarro_mucoide,114,0.95
+Asma brônquica,tosse,108,0.9
+Asma brônquica,fadiga,108,0.9
+Hipertensão,falta_de_concentração,114,0.95
+Hipertensão,perda_de_equilíbrio,114,0.95
+Hipertensão,dor_de_cabeça,108,0.9
+Hipertensão,tontura,108,0.9
+Hipertensão,dor_no_peito,108,0.9
+Enxaqueca,acidez,114,0.95
+Enxaqueca,indigestão,114,0.95
+Enxaqueca,dor_de_cabeça,114,0.95
+Enxaqueca,visão_turva,114,0.95
+Enxaqueca,fome_excessiva,114,0.95
+Enxaqueca,rigidez_no_pescoço,114,0.95
+Enxaqueca,depressão,114,0.95
+Enxaqueca,irritabilidade,114,0.95
+Enxaqueca,distúrbios_visuais,114,0.95
+Espondilose cervical,dor_no_pescoço,114,0.95
+Espondilose cervical,perda_de_equilíbrio,114,0.95
+Espondilose cervical,tontura,114,0.95
+Espondilose cervical,dor_nas_costas,108,0.9
+Espondilose cervical,fraqueza_nos_membros,108,0.9
+Paralisia (hemorragia cerebral),alteração_sensorial,114,0.95
+Paralisia (hemorragia cerebral),vômito,108,0.9
+Paralisia (hemorragia cerebral),dor_de_cabeça,108,0.9
+Paralisia (hemorragia cerebral),fraqueza_em_um_lado_do_corpo,108,0.9
+Icterícia,coceira,114,0.95
+Icterícia,vômito,114,0.95
+Icterícia,fadiga,114,0.95
+Icterícia,perda_de_peso,114,0.95
+Icterícia,febre_alta,114,0.95
+Icterícia,pele_amarelada,114,0.95
+Icterícia,urina_escura,114,0.95
+Icterícia,dor_abdominal,114,0.95
+Malária,dor_muscular,120,1.0
+Malária,calafrios,114,0.95
+Malária,febre_alta,114,0.95
+Malária,vômito,114,0.95
+Malária,suor_excessivo,114,0.95
+Malária,dor_de_cabeça,114,0.95
+Malária,náusea,114,0.95
+Malária,diarreia,108,0.9
+Catapora,mal_estar,120,1.0
+Catapora,manchas_vermelhas_no_corpo,120,1.0
+Catapora,coceira,114,0.95
+Catapora,fadiga,114,0.95
+Catapora,erupção_cutânea,114,0.95
+Catapora,letargia,114,0.95
+Catapora,febre_alta,114,0.95
+Catapora,perda_de_apetite,114,0.95
+Catapora,dor_de_cabeça,114,0.95
+Catapora,linfonodos_inchados,114,0.95
+Catapora,febre_leve,114,0.95
+Dengue,náusea,120,1.0
+Dengue,dor_nas_costas,120,1.0
+Dengue,dor_atrás_dos_olhos,120,1.0
+Dengue,perda_de_apetite,120,1.0
+Dengue,dor_de_cabeça,120,1.0
+Dengue,erupção_cutânea,114,0.95
+Dengue,febre_alta,114,0.95
+Dengue,fadiga,114,0.95
+Dengue,vômito,114,0.95
+Dengue,dor_nas_articulações,114,0.95
+Dengue,calafrios,114,0.95
+Dengue,dor_muscular,114,0.95
+Dengue,manchas_vermelhas_no_corpo,114,0.95
+Dengue,mal_estar,114,0.95
+Febre tifoide,calafrios,120,1.0
+Febre tifoide,fadiga,120,1.0
+Febre tifoide,febre_alta,120,1.0
+Febre tifoide,vômito,114,0.95
+Febre tifoide,náusea,114,0.95
+Febre tifoide,constipação,114,0.95
+Febre tifoide,dor_abdominal,114,0.95
+Febre tifoide,diarreia,114,0.95
+Febre tifoide,aparência_tóxica,114,0.95
+Febre tifoide,dor_na_barriga,114,0.95
+Febre tifoide,dor_de_cabeça,114,0.95
+Hepatite A,febre_leve,120,1.0
+Hepatite A,dor_muscular,120,1.0
+Hepatite A,amarelamento_dos_olhos,120,1.0
+Hepatite A,pele_amarelada,114,0.95
+Hepatite A,vômito,114,0.95
+Hepatite A,dor_nas_articulações,114,0.95
+Hepatite A,urina_escura,114,0.95
+Hepatite A,dor_abdominal,114,0.95
+Hepatite A,perda_de_apetite,114,0.95
+Hepatite A,náusea,114,0.95
+Hepatite A,diarreia,114,0.95
+Hepatite B,amarelamento_dos_olhos,120,1.0
+Hepatite B,mal_estar,120,1.0
+Hepatite B,recebeu_transfusão_de_sangue,120,1.0
+Hepatite B,recebeu_injeções_não_esterilizadas,120,1.0
+Hepatite B,pele_amarelada,114,0.95
+Hepatite B,letargia,114,0.95
+Hepatite B,fadiga,114,0.95
+Hepatite B,coceira,114,0.95
+Hepatite B,urina_amarela,114,0.95
+Hepatite B,dor_abdominal,114,0.95
+Hepatite B,perda_de_apetite,114,0.95
+Hepatite B,urina_escura,114,0.95
+Hepatite C,fadiga,114,0.95
+Hepatite C,pele_amarelada,114,0.95
+Hepatite C,náusea,114,0.95
+Hepatite C,perda_de_apetite,114,0.95
+Hepatite C,histórico_familiar,114,0.95
+Hepatite C,amarelamento_dos_olhos,108,0.9
+Hepatite D,dor_nas_articulações,114,0.95
+Hepatite D,vômito,114,0.95
+Hepatite D,fadiga,114,0.95
+Hepatite D,pele_amarelada,114,0.95
+Hepatite D,urina_escura,114,0.95
+Hepatite D,náusea,114,0.95
+Hepatite D,perda_de_apetite,114,0.95
+Hepatite D,dor_abdominal,114,0.95
+Hepatite D,amarelamento_dos_olhos,114,0.95
+Hepatite E,sangramento_estomacal,120,1.0
+Hepatite E,amarelamento_dos_olhos,120,1.0
+Hepatite E,coma,120,1.0
+Hepatite E,perda_de_apetite,120,1.0
+Hepatite E,dor_abdominal,120,1.0
+Hepatite E,pele_amarelada,114,0.95
+Hepatite E,febre_alta,114,0.95
+Hepatite E,fadiga,114,0.95
+Hepatite E,vômito,114,0.95
+Hepatite E,dor_nas_articulações,114,0.95
+Hepatite E,náusea,114,0.95
+Hepatite E,urina_escura,114,0.95
+Hepatite E,falência_hepática_aguda,114,0.95
+Hepatite alcoólica,vômito,114,0.95
+Hepatite alcoólica,pele_amarelada,114,0.95
+Hepatite alcoólica,dor_abdominal,114,0.95
+Hepatite alcoólica,inchaço_do_estômago,114,0.95
+Hepatite alcoólica,distensão_abdominal,114,0.95
+Hepatite alcoólica,histórico_de_consumo_de_álcool,114,0.95
+Hepatite alcoólica,sobrecarga_de_fluidos,114,0.95
+Tuberculose,sangue_no_escarro,120,1.0
+Tuberculose,dor_no_peito,120,1.0
+Tuberculose,catarro,120,1.0
+Tuberculose,mal_estar,120,1.0
+Tuberculose,linfonodos_inchados,120,1.0
+Tuberculose,amarelamento_dos_olhos,120,1.0
+Tuberculose,febre_leve,120,1.0
+Tuberculose,perda_de_apetite,120,1.0
+Tuberculose,suor_excessivo,114,0.95
+Tuberculose,falta_de_ar,114,0.95
+Tuberculose,febre_alta,114,0.95
+Tuberculose,tosse,114,0.95
+Tuberculose,perda_de_peso,114,0.95
+Tuberculose,fadiga,114,0.95
+Tuberculose,vômito,114,0.95
+Tuberculose,calafrios,114,0.95
+Resfriado comum,catarro,120,1.0
+Resfriado comum,dor_muscular,120,1.0
+Resfriado comum,perda_do_olfato,120,1.0
+Resfriado comum,dor_no_peito,120,1.0
+Resfriado comum,congestão,120,1.0
+Resfriado comum,coriza,120,1.0
+Resfriado comum,pressão_nos_seios_nasais,120,1.0
+Resfriado comum,vermelhidão_nos_olhos,120,1.0
+Resfriado comum,irritação_na_garganta,120,1.0
+Resfriado comum,espirros_contínuos,114,0.95
+Resfriado comum,mal_estar,114,0.95
+Resfriado comum,dor_de_cabeça,114,0.95
+Resfriado comum,linfonodos_inchados,114,0.95
+Resfriado comum,fadiga,114,0.95
+Resfriado comum,tosse,114,0.95
+Resfriado comum,calafrios,114,0.95
+Resfriado comum,febre_alta,114,0.95
+Pneumonia,dor_no_peito,120,1.0
+Pneumonia,escarro_enferrujado,120,1.0
+Pneumonia,frequência_cardíaca_elevada,120,1.0
+Pneumonia,tosse,114,0.95
+Pneumonia,fadiga,114,0.95
+Pneumonia,calafrios,114,0.95
+Pneumonia,febre_alta,114,0.95
+Pneumonia,mal_estar,114,0.95
+Pneumonia,suor_excessivo,114,0.95
+Pneumonia,falta_de_ar,114,0.95
+Pneumonia,catarro,114,0.95
+Hemorroidas,constipação,114,0.95
+Hemorroidas,dor_ao_evacuar,114,0.95
+Hemorroidas,dor_na_região_anal,114,0.95
+Hemorroidas,fezes_com_sangue,114,0.95
+Hemorroidas,irritação_no_ânus,114,0.95
+Infarto,dor_no_peito,114,0.95
+Infarto,vômito,108,0.9
+Infarto,falta_de_ar,108,0.9
+Infarto,suor_excessivo,108,0.9
+Varizes,fadiga,114,0.95
+Varizes,cãibras,114,0.95
+Varizes,hematomas,114,0.95
+Varizes,obesidade,114,0.95
+Varizes,pernas_inchadas,114,0.95
+Varizes,veias_proeminentes_na_panturrilha,114,0.95
+Varizes,vasos_sanguíneos_inchados,108,0.9
+Hipotireoidismo,irritabilidade,120,1.0
+Hipotireoidismo,extremidades_inchadas,120,1.0
+Hipotireoidismo,depressão,120,1.0
+Hipotireoidismo,tireoide_aumentada,120,1.0
+Hipotireoidismo,unhas_quebradiças,120,1.0
+Hipotireoidismo,menstruação_irregular,120,1.0
+Hipotireoidismo,ganho_de_peso,114,0.95
+Hipotireoidismo,mãos_e_pés_frios,114,0.95
+Hipotireoidismo,mudanças_de_humor,114,0.95
+Hipotireoidismo,tontura,114,0.95
+Hipotireoidismo,letargia,114,0.95
+Hipotireoidismo,rosto_e_olhos_inchados,114,0.95
+Hipotireoidismo,fadiga,108,0.9
+Hipertireoidismo,fraqueza_muscular,120,1.0
+Hipertireoidismo,menstruação_irregular,120,1.0
+Hipertireoidismo,irritabilidade,120,1.0
+Hipertireoidismo,perda_de_peso,114,0.95
+Hipertireoidismo,mudanças_de_humor,114,0.95
+Hipertireoidismo,fadiga,114,0.95
+Hipertireoidismo,agitação,114,0.95
+Hipertireoidismo,frequência_cardíaca_elevada,114,0.95
+Hipertireoidismo,diarreia,114,0.95
+Hipertireoidismo,suor_excessivo,114,0.95
+Hipertireoidismo,fome_excessiva,114,0.95
+Hipoglicemia,fala_arrastada,120,1.0
+Hipoglicemia,irritabilidade,120,1.0
+Hipoglicemia,palpitações,120,1.0
+Hipoglicemia,fome_excessiva,120,1.0
+Hipoglicemia,suor_excessivo,114,0.95
+Hipoglicemia,ansiedade,114,0.95
+Hipoglicemia,fadiga,114,0.95
+Hipoglicemia,vômito,114,0.95
+Hipoglicemia,visão_turva,114,0.95
+Hipoglicemia,náusea,114,0.95
+Hipoglicemia,dor_de_cabeça,114,0.95
+Hipoglicemia,lábios_ressecados_e_formigando,114,0.95
+Osteoartrite,dor_nas_articulações,114,0.95
+Osteoartrite,dor_no_pescoço,114,0.95
+Osteoartrite,dor_no_joelho,114,0.95
+Osteoartrite,dor_na_articulação_do_quadril,114,0.95
+Osteoartrite,articulações_inchadas,114,0.95
+Osteoartrite,dificuldade_ao_caminhar,114,0.95
+Artrite,fraqueza_muscular,114,0.95
+Artrite,rigidez_no_pescoço,114,0.95
+Artrite,articulações_inchadas,114,0.95
+Artrite,rigidez_no_movimento,114,0.95
+Artrite,dificuldade_ao_caminhar,114,0.95
+Vertigem posicional,vômito,114,0.95
+Vertigem posicional,dor_de_cabeça,114,0.95
+Vertigem posicional,náusea,114,0.95
+Vertigem posicional,perda_de_equilíbrio,114,0.95
+Vertigem posicional,instabilidade,114,0.95
+Vertigem posicional,sensação_de_rotação,108,0.9
+Acne,erupção_cutânea,114,0.95
+Acne,espinhas_com_pus,108,0.9
+Acne,cravos,108,0.9
+Acne,descamação,108,0.9
+Infecção urinária,desconforto_na_bexiga,114,0.95
+Infecção urinária,vontade_contínua_de_urinar,114,0.95
+Infecção urinária,ardência_ao_urinar,108,0.9
+Infecção urinária,urina_com_cheiro_forte,102,0.85
+Psoríase,erupção_cutânea,114,0.95
+Psoríase,dor_nas_articulações,114,0.95
+Psoríase,descascamento_da_pele,114,0.95
+Psoríase,descamação_prateada,114,0.95
+Psoríase,pequenas_depressões_nas_unhas,114,0.95
+Psoríase,unhas_inflamadas,114,0.95
+Impetigo,erupção_cutânea,114,0.95
+Impetigo,bolhas,114,0.95
+Impetigo,ferida_vermelha_ao_redor_do_nariz,114,0.95
+Impetigo,crostas_amarelas,114,0.95
+Impetigo,febre_alta,102,0.85

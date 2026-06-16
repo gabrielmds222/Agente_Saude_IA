@@ -1,0 +1,206 @@
+Real,Predito,Correto
+AIDS,AIDS,True
+AIDS,AIDS,True
+AIDS,AIDS,True
+AIDS,AIDS,True
+AIDS,AIDS,True
+Acne,Acne,True
+Acne,Acne,True
+Acne,Acne,True
+Acne,Acne,True
+Acne,Acne,True
+Alergia,Alergia,True
+Alergia,Alergia,True
+Alergia,Alergia,True
+Alergia,Alergia,True
+Alergia,Alergia,True
+Artrite,Artrite,True
+Artrite,Artrite,True
+Artrite,Artrite,True
+Artrite,Artrite,True
+Artrite,Artrite,True
+Asma brônquica,Asma brônquica,True
+Asma brônquica,Asma brônquica,True
+Asma brônquica,Asma brônquica,True
+Asma brônquica,Asma brônquica,True
+Asma brônquica,Asma brônquica,True
+Catapora,Catapora,True
+Catapora,Catapora,True
+Catapora,Catapora,True
+Catapora,Catapora,True
+Catapora,Catapora,True
+Colestase crônica,Colestase crônica,True
+Colestase crônica,Colestase crônica,True
+Colestase crônica,Colestase crônica,True
+Colestase crônica,Colestase crônica,True
+Colestase crônica,Colestase crônica,True
+Dengue,Dengue,True
+Dengue,Dengue,True
+Dengue,Dengue,True
+Dengue,Dengue,True
+Dengue,Dengue,True
+Diabetes,Diabetes,True
+Diabetes,Diabetes,True
+Diabetes,Diabetes,True
+Diabetes,Diabetes,True
+Diabetes,Diabetes,True
+Enxaqueca,Enxaqueca,True
+Enxaqueca,Enxaqueca,True
+Enxaqueca,Enxaqueca,True
+Enxaqueca,Enxaqueca,True
+Enxaqueca,Enxaqueca,True
+Espondilose cervical,Espondilose cervical,True
+Espondilose cervical,Espondilose cervical,True
+Espondilose cervical,Espondilose cervical,True
+Espondilose cervical,Espondilose cervical,True
+Espondilose cervical,Espondilose cervical,True
+Febre tifoide,Febre tifoide,True
+Febre tifoide,Febre tifoide,True
+Febre tifoide,Febre tifoide,True
+Febre tifoide,Febre tifoide,True
+Febre tifoide,Febre tifoide,True
+Gastroenterite,Gastroenterite,True
+Gastroenterite,Gastroenterite,True
+Gastroenterite,Gastroenterite,True
+Gastroenterite,Gastroenterite,True
+Gastroenterite,Gastroenterite,True
+Hemorroidas,Hemorroidas,True
+Hemorroidas,Hemorroidas,True
+Hemorroidas,Hemorroidas,True
+Hemorroidas,Hemorroidas,True
+Hemorroidas,Hemorroidas,True
+Hepatite A,Hepatite A,True
+Hepatite A,Hepatite A,True
+Hepatite A,Hepatite A,True
+Hepatite A,Hepatite A,True
+Hepatite A,Hepatite A,True
+Hepatite B,Hepatite B,True
+Hepatite B,Hepatite B,True
+Hepatite B,Hepatite B,True
+Hepatite B,Hepatite B,True
+Hepatite B,Hepatite B,True
+Hepatite C,Hepatite C,True
+Hepatite C,Hepatite E,False
+Hepatite C,Hepatite C,True
+Hepatite C,Hepatite C,True
+Hepatite C,Hepatite C,True
+Hepatite D,Hepatite E,False
+Hepatite D,Hepatite E,False
+Hepatite D,Hepatite E,False
+Hepatite D,Hepatite E,False
+Hepatite D,Hepatite E,False
+Hepatite E,Hepatite E,True
+Hepatite E,Hepatite E,True
+Hepatite E,Hepatite E,True
+Hepatite E,Hepatite E,True
+Hepatite E,Hepatite E,True
+Hepatite alcoólica,Hepatite alcoólica,True
+Hepatite alcoólica,Hepatite alcoólica,True
+Hepatite alcoólica,Hepatite alcoólica,True
+Hepatite alcoólica,Hepatite alcoólica,True
+Hepatite alcoólica,Hepatite alcoólica,True
+Hipertensão,Hipertensão,True
+Hipertensão,Hipertensão,True
+Hipertensão,Hipertensão,True
+Hipertensão,Hipertensão,True
+Hipertensão,Hipertensão,True
+Hipertireoidismo,Hipertireoidismo,True
+Hipertireoidismo,Hipertireoidismo,True
+Hipertireoidismo,Hipertireoidismo,True
+Hipertireoidismo,Hipertireoidismo,True
+Hipertireoidismo,Hipertireoidismo,True
+Hipoglicemia,Hipoglicemia,True
+Hipoglicemia,Hipoglicemia,True
+Hipoglicemia,Hipoglicemia,True
+Hipoglicemia,Hipoglicemia,True
+Hipoglicemia,Hipoglicemia,True
+Hipotireoidismo,Hipotireoidismo,True
+Hipotireoidismo,Hipotireoidismo,True
+Hipotireoidismo,Hipotireoidismo,True
+Hipotireoidismo,Hipotireoidismo,True
+Hipotireoidismo,Hipotireoidismo,True
+Icterícia,Icterícia,True
+Icterícia,Icterícia,True
+Icterícia,Icterícia,True
+Icterícia,Icterícia,True
+Icterícia,Icterícia,True
+Impetigo,Impetigo,True
+Impetigo,Impetigo,True
+Impetigo,Impetigo,True
+Impetigo,Impetigo,True
+Impetigo,Impetigo,True
+Infarto,Tuberculose,False
+Infarto,Pneumonia,False
+Infarto,Tuberculose,False
+Infarto,Tuberculose,False
+Infarto,Tuberculose,False
+Infecção fúngica,Infecção fúngica,True
+Infecção fúngica,Infecção fúngica,True
+Infecção fúngica,Infecção fúngica,True
+Infecção fúngica,Infecção fúngica,True
+Infecção fúngica,Infecção fúngica,True
+Infecção urinária,Infecção urinária,True
+Infecção urinária,Infecção urinária,True
+Infecção urinária,Infecção urinária,True
+Infecção urinária,Infecção urinária,True
+Infecção urinária,Infecção urinária,True
+Malária,Malária,True
+Malária,Malária,True
+Malária,Malária,True
+Malária,Malária,True
+Malária,Malária,True
+Osteoartrite,Osteoartrite,True
+Osteoartrite,Osteoartrite,True
+Osteoartrite,Osteoartrite,True
+Osteoartrite,Osteoartrite,True
+Osteoartrite,Osteoartrite,True
+Paralisia (hemorragia cerebral),Paralisia (hemorragia cerebral),True
+Paralisia (hemorragia cerebral),Paralisia (hemorragia cerebral),True
+Paralisia (hemorragia cerebral),Paralisia (hemorragia cerebral),True
+Paralisia (hemorragia cerebral),Paralisia (hemorragia cerebral),True
+Paralisia (hemorragia cerebral),Paralisia (hemorragia cerebral),True
+Pneumonia,Pneumonia,True
+Pneumonia,Pneumonia,True
+Pneumonia,Pneumonia,True
+Pneumonia,Pneumonia,True
+Pneumonia,Pneumonia,True
+Psoríase,Psoríase,True
+Psoríase,Psoríase,True
+Psoríase,Psoríase,True
+Psoríase,Psoríase,True
+Psoríase,Psoríase,True
+Reação a medicamento,Reação a medicamento,True
+Reação a medicamento,Reação a medicamento,True
+Reação a medicamento,Reação a medicamento,True
+Reação a medicamento,Reação a medicamento,True
+Reação a medicamento,Reação a medicamento,True
+Refluxo gastroesofágico,Refluxo gastroesofágico,True
+Refluxo gastroesofágico,Refluxo gastroesofágico,True
+Refluxo gastroesofágico,Refluxo gastroesofágico,True
+Refluxo gastroesofágico,Refluxo gastroesofágico,True
+Refluxo gastroesofágico,Refluxo gastroesofágico,True
+Resfriado comum,Resfriado comum,True
+Resfriado comum,Resfriado comum,True
+Resfriado comum,Resfriado comum,True
+Resfriado comum,Resfriado comum,True
+Resfriado comum,Resfriado comum,True
+Tuberculose,Tuberculose,True
+Tuberculose,Tuberculose,True
+Tuberculose,Tuberculose,True
+Tuberculose,Tuberculose,True
+Tuberculose,Tuberculose,True
+Varizes,Varizes,True
+Varizes,Varizes,True
+Varizes,Varizes,True
+Varizes,Varizes,True
+Varizes,Varizes,True
+Vertigem posicional,Vertigem posicional,True
+Vertigem posicional,Vertigem posicional,True
+Vertigem posicional,Vertigem posicional,True
+Vertigem posicional,Vertigem posicional,True
+Vertigem posicional,Vertigem posicional,True
+Úlcera péptica,Úlcera péptica,True
+Úlcera péptica,Úlcera péptica,True
+Úlcera péptica,Úlcera péptica,True
+Úlcera péptica,Úlcera péptica,True
+Úlcera péptica,Úlcera péptica,True
