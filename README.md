@@ -9,7 +9,7 @@ O projeto tem o objetivo de criar um agente de saúde com IA para diagnosticar d
 **Python 3.10+** instalado na máquina.
 
 ```bash
-pip install pgmpy==0.1.25 pandas numpy matplotlib networkx scikit-learn
+pip install pgmpy==0.1.25 pandas numpy matplotlib networkx scikit-learn jupyter
 ```
 
 ### Dataset
@@ -18,6 +18,14 @@ Baixe os 4 arquivos CSV no link abaixo e coloque todos dentro da pasta `datasets
 
 🔗 [Disease Symptom Prediction — Kaggle](https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset)
 
+Os arquivos necessários são:
+- `dataset.csv`
+- `Symptom-severity.csv`
+- `symptom_Description.csv`
+- `symptom_precaution.csv`
+
+> Os arquivos gerados pelo pipeline (`dataset_pt.csv`, `probabilidades_pt.csv`, `modelo_rede.pkl` etc.) já estão versionados no repositório.
+
 ---
 
 ## 🗂️ Estrutura do Projeto
@@ -25,12 +33,24 @@ Baixe os 4 arquivos CSV no link abaixo e coloque todos dentro da pasta `datasets
 ```
 Agente_Saude_IA/
 │
-├── datasets/                        ← CSVs do Kaggle (não versionados)
+├── datasets/
+│   ├── dataset.csv                  ← Baixar do Kaggle
+│   ├── Symptom-severity.csv         ← Baixar do Kaggle
+│   ├── symptom_Description.csv      ← Baixar do Kaggle
+│   ├── symptom_precaution.csv       ← Baixar do Kaggle
+│   ├── dataset_pt.csv               ← Gerado pelo pipeline (já versionado)
+│   ├── probabilidades_pt.csv        ← Gerado pelo pipeline (já versionado)
+│   ├── symptom_Description_pt.csv   ← Gerado pelo pipeline (já versionado)
+│   ├── symptom_precaution_pt.csv    ← Gerado pelo pipeline (já versionado)
+│   └── modelo_rede.pkl              ← Gerado pelo pipeline (já versionado)
 │
 ├── notebooks/
 │   └── 01_tratamento_dados.ipynb   ← Exploração, limpeza e construção da rede
 │
 ├── scripts/
+│   ├── data_clean.py               ← Limpeza e cálculo de probabilidades
+│   ├── traduzir_dataset.py         ← Tradução para português
+│   ├── bayes_structure.py          ← Construção da Rede Bayesiana
 │   ├── 01_Motor_Inferencia.py      ← Motor de inferência
 │   ├── 02_Agent.py                 ← Agente interativo
 │   ├── 03_Validation.py            ← Métricas de avaliação
@@ -46,19 +66,21 @@ Agente_Saude_IA/
 
 **1. Notebook — Tratamento dos dados e construção da rede**
 
-Abra e execute todas as células do notebook:
+```bash
+jupyter notebook notebooks/01_tratamento_dados.ipynb
+```
 
-```
-notebooks/01_tratamento_dados.ipynb
-```
+Execute todas as células em ordem. Este notebook realiza a limpeza, tradução e construção da Rede Bayesiana.
+
+> Se os arquivos gerados (`dataset_pt.csv`, `modelo_rede.pkl` etc.) já estiverem na pasta `datasets/`, este passo pode ser pulado.
 
 **2. Scripts — em ordem**
 
 ```bash
-python scripts/01_Motor_Inferencia.py 
-python scripts/02_Agent.py            
-python scripts/03_Validation.py       
-python scripts/04_Web_view.py         
+python scripts/01_Motor_Inferencia.py   # testa o motor de inferência
+python scripts/02_Agent.py              # roda o agente de triagem
+python scripts/03_Validation.py         # gera as métricas de avaliação
+python scripts/04_Web_view.py           # gera o grafo da rede bayesiana
 ```
 
 ---
@@ -94,3 +116,11 @@ Avaliação realizada com amostra de 5 casos por doença (205 casos totais):
 | Acurácia geral | **94.6%** |
 | Macro F1-Score | **0.93** |
 | Doenças com F1 = 1.00 | **38 / 41** |
+
+---
+
+## ⚠️ Aviso
+
+> Este sistema é **exclusivamente educacional** e foi desenvolvido como projeto acadêmico.
+> **Não substitui avaliação médica profissional.**
+> Em caso de sintomas, consulte um médico.
